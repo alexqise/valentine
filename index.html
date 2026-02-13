@@ -138,19 +138,18 @@
       font-size: 1.35rem;
       font-weight: 600;
       color: white;
-      background: linear-gradient(135deg, #e63946 0%, #d62839 100%);
+      background: #e63946;
       border: none;
       padding: 16px 48px;
       border-radius: 60px;
       cursor: pointer;
-      box-shadow: 0 6px 25px rgba(230, 57, 70, 0.45);
-      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: none;
+      transition: transform 0.2s;
       user-select: none;
     }
 
     .btn-yes:hover {
-      transform: scale(1.07);
-      box-shadow: 0 8px 30px rgba(230, 57, 70, 0.55);
+      transform: scale(1.05);
     }
 
     .btn-yes:active {
@@ -163,18 +162,18 @@
       font-weight: 600;
       color: #e63946;
       background: white;
-      border: 2.5px solid #e63946;
+      border: 2px solid #e63946;
       padding: 14px 38px;
       border-radius: 60px;
       cursor: pointer;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: none;
+      transition: transform 0.15s;
       user-select: none;
       z-index: 10;
     }
 
     .btn-no:hover {
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+      transform: scale(1.05);
     }
 
     /* Spawned Yes buttons */
@@ -184,20 +183,19 @@
       font-size: 1.15rem;
       font-weight: 600;
       color: white;
-      background: linear-gradient(135deg, #e63946 0%, #d62839 100%);
+      background: #e63946;
       border: none;
       padding: 13px 36px;
       border-radius: 60px;
       cursor: pointer;
-      box-shadow: 0 4px 18px rgba(230, 57, 70, 0.4);
+      box-shadow: none;
       z-index: 5;
       animation: popIn 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
       user-select: none;
     }
 
     .spawned-yes:hover {
-      transform: scale(1.07);
-      box-shadow: 0 6px 25px rgba(230, 57, 70, 0.5);
+      transform: scale(1.05);
     }
 
     @keyframes popIn {
@@ -250,7 +248,7 @@
       color: #e63946;
       text-shadow: none;
       opacity: 0;
-      margin-bottom: 20px;
+      margin-bottom: -170px;
       position: relative;
       z-index: 5;
     }
@@ -273,9 +271,9 @@
     .flowers-container {
       position: relative;
       z-index: 4;
-      width: clamp(420px, 60vw, 630px);
-      height: clamp(420px, 60vw, 630px);
-      margin-top: -10px;
+      width: clamp(500px, 75vw, 800px);
+      height: clamp(500px, 75vw, 800px);
+      margin-top: 30px;
     }
 
     .flowers-container lottie-player {
@@ -329,7 +327,7 @@
     <div id="sparkles-bg"></div>
 
     <div class="question-content">
-      <h1 class="question-text">Ashley, will yuo be my valentine? 🤔</h1>
+      <h1 class="question-text">Ashley, will you be my valentine? 🤔</h1>
       <div class="btn-row">
         <button class="btn-yes" id="yes-btn">Yes</button>
         <button class="btn-no" id="no-btn">No</button>
@@ -377,7 +375,7 @@
       // Mid-left lower
       { src: 'gifs/spongebob-spongebob-meme.gif',  bottom: '30%', left: '6%',   width: 185, rotation: 4,   delay: 1.15 },
       // Mid-right lower
-      { src: 'gifs/71a50a2c79ba34e830c54aad9b0890c4.gif', bottom: '30%', right: '18%', width: 175, rotation: -6, delay: 1.0 },
+      { src: 'gifs/71a50a2c79ba34e830c54aad9b0890c4.gif', bottom: '30%', right: '20%', width: 175, rotation: -6, delay: 1.0 },
       // Bottom-left
       { src: 'gifs/200.gif',                       bottom: '5%', left: '6%',    width: 180, rotation: -5,  delay: 1.2 },
       // Bottom-center-left
@@ -388,6 +386,12 @@
       { src: 'gifs/giphy.gif',                     bottom: '5%', right: '6%',   width: 185, rotation: 5,   delay: 1.3 },
       // Extra — mid-left
       { src: 'gifs/1c886e5e6962d3be05fd165e2df34518.gif', top: '50%', left: '18%', width: 150, rotation: 3, delay: 1.1 },
+      // Extra — mid-right
+      { src: 'gifs/chiikawa-usagi.gif',               top: '25%',   right: '25%',  width: 145, rotation: -4, delay: 1.2 },
+      // Extra — bottom center
+      { src: 'gifs/200w.gif',                          bottom: '3%', left: '44%',   width: 160, rotation: 3,  delay: 1.15 },
+      // Extra — top center
+      { src: 'gifs/snoopy.gif',                        top: '1%',    left: '44%',   width: 140, rotation: -3, delay: 0.85 },
     ];
 
     // ==========================================
